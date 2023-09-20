@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .pro,
+        #fname,
+        #lname,
+        #email {
+            background-color: #ddd;
+            outline: none;
+            background-color: #ddd;
+            color: black;
+            width: 95%;
+            padding: 10px;
+            margin: 5px 0 20px 0;
+            border: none;
+            background: #f1f1f1;
+        }
+
+        .container {
+            box-sizing: border-box;
+            width: 450px;
+            padding: 10px;
+            border: 2px rgb(255, 55, 0) solid;
+            border-radius: 10px;
+            box-shadow: 2px 5px 10px rgb(85, 71, 190);
+            position: relative;
+            margin-left: 35%;
+            margin-right: 40%;
+            margin-top: 44px;
+        }
+
+        .sub {
+            width: 100px;
+            height: 40px;
+            background-color: rgb(124, 188, 240);
+            font-size: 16px;
+            /* border: 2px rgb(57, 229, 123) solid;*/
+            border-radius: 10px;
+            position: relative;
+            margin-left: 35%;
+        }
+    </style>
+
+    <title>Book Class</title>
+</head>
+
+<body>
+
+    <header class="header">
+
+        <a href="index.html" class="logo"> <span>Fusion</span>FIT </a>
+
+        <div id="menu-btn" class="fas fa-bars"></div>
+
+        <nav class="navbar">
+            <a href="index.html">home</a>
+            <a href="index.html#about">about</a>
+            <a href="index.html#features">features</a>
+            <a href="index.html#pricing">pricing</a>
+            <a href="index.html#trainers">trainers</a>
+            <a href="registration.html">Become A Member</a>
+            <a href="index.html#blogs">blogs</a>
+
+        </nav>
+
+    </header>
+
+    <section class="home" id="home">
+
+        <div class="swiper home-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide slide" style="background: url(images/home-bg-1.jpg) no-repeat;">
+                    <div class="content">
+                        <span>be strong, be fit</span>
+                        <h3>Make yourself stronger than your excuses.</h3>
+                        <a href="#" class="btn">get started</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide" style="background: url(images/home-bg-2.jpg) no-repeat;">
+                    <div class="content">
+                        <span>be strong, be fit</span>
+                        <h3>Make yourself stronger than your excuses.</h3>
+                        <a href="#" class="btn">get started</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide" style="background: url(images/home-bg-3.jpg) no-repeat;">
+                    <div class="content">
+                        <span>be strong, be fit</span>
+                        <h3>Make yourself stronger than your excuses.</h3>
+                        <a href="#" class="btn">get started</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+        </div>
+
+    </section>
+
+
+
+    <section class="form">
+        <div class="bg-img">
+            <form class="container" method="POST" action="res.html" style="color: beige;">
+                <h2 style="color: beige;">GET SPECIAL MEMBERSHIP OFFERS</h2>
+                <label for="club"><b>CLUB</b></label><br>
+
+                <select class="pro" placeholder="club" required>
+                    <option value="select club">-Select Location</option>
+                    <option value="banashankari">Banashankari Stage 2</option>
+                    <option value="marathalli">Marathalli</option>
+                    <option value="jp">JP Nagar</option>
+                    <option value="hsr">HSR layout</option>
+                    <option value="whitefield">Whitefield</option>
+                </select><br><br>
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname" required><br>
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname" required><br>
+                <label for="email">Enter your email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="checkbox"></label>
+                <input type="checkbox" id="t&c" name="t&c" required> I accept Terms & Conditions <br><br>
+                <button type="submit" class="sub">SUBMIT</button>
+                <br><br>
+                <details>
+                    <summary style="color:rgb(112, 71, 246); text-decoration-line: none;">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Show Terms & Conditions</summary>
+                    <p style="background-color: rgb(49, 49, 49); color: white;">1.Subject to Fusion Fit terms and
+                        conditions of entry (available in club).<br><br>
+                        2.Valid for first time visitors aged 16 years and above only. <br><br>
+                        3.Valid for local residents or expatriates residing in India only.<br><br>
+                        4.An appointment must be made in advance for the first visit which must be accompanied by a
+                        Fusion Fit Consultant.<br><br>
+                        5.Trial pass is for one-time use only and cannot be accumulated.Must be used within 30
+                        days.<br><br>
+                        6.Not valid with any other offer. Other terms and conditions may apply.<br><br>
+                        7.By clicking on submit you authorize Fusion Fit or its representative to contact you via phone,
+                        email or SMS overriding your registration.</p>
+                </details>
+            </form>
+
+        </div>
+    </section>
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a class="links" href="index.html">home</a>
+                <a class="links" href="index.html#about">about</a>
+                <a class="links" href="index.html#features">features</a>
+                <a class="links" href="index.html#pricing">pricing</a>
+                <a class="links" href="index.html#trainers">trainers</a>
+                <a class="links" href="index.html#blogs">blogs</a>
+            </div>
+
+            <div class="box">
+                <h3>opening hours</h3>
+                <p> monday : <i> 7:00am - 10:30pm </i> </p>
+                <p> tuesday : <i> 7:00am - 10:30pm </i> </p>
+                <p> wednesday : <i> 7:00am - 10:30pm </i> </p>
+                <p> friday : <i> 7:00am - 10:30pm </i> </p>
+                <p> saturday : <i> 7:00am - 10:30pm </i> </p>
+                <p> sunday : <i> closed </i> </p>
+            </div>
+
+            <div class="box">
+                <h3>opening hours</h3>
+                <p> <i class="fas fa-phone"></i> +123-456-7890 </p>
+                <p> <i class="fas fa-phone"></i> +111-222-3333 </p>
+                <p> <i class="fas fa-envelope"></i> fusionfit@gmail.com </p>
+                <p> <i class="fas fa-map"></i> Bengaluru, India - 560070 </p>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                    <a href="#" class="fab fa-pinterest"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>newsletter</h3>
+                <p>subscribe for latest updates</p>
+                <form action="">
+                    <input type="email" name="" class="email" placeholder="enter your email" id="">
+                    <input type="submit" value="subscribe" class="btn">
+                </form>
+            </div>
+
+        </div>
+
+    </section>
+
+    <div class="credit">All rights reserved! </div>
+
+
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
